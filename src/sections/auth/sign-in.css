@@ -1,0 +1,366 @@
+/* ===========================
+   PAGE
+=========================== */
+
+.login-page {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+    background: linear-gradient(135deg,
+            #eef4ff 0%,
+            #f8fbff 50%,
+            #eef7f3 100%);
+}
+
+.login-page::before,
+.login-page::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(120px);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.login-page::before {
+    width: 420px;
+    height: 420px;
+    top: -120px;
+    left: -120px;
+    background: rgba(129, 140, 248, 0.28);
+}
+
+.login-page::after {
+    width: 420px;
+    height: 420px;
+    bottom: -120px;
+    right: -120px;
+    background: rgba(52, 211, 153, 0.20);
+}
+
+
+
+.forgot-link {
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+
+/* ===========================
+   HEADER
+=========================== */
+
+.login-header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    box-sizing: border-box;
+}
+
+
+/* ===========================
+   MAIN
+=========================== */
+
+.login-container {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    width: 100%;
+    height: 100vh;
+
+    transform: translateY(-60px);
+}
+
+/* ===========================
+   LEFT PANEL
+=========================== */
+
+.left-panel {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+.left-panel>* {
+    position: relative;
+    z-index: 2;
+}
+
+.college-logo {
+    width: 50%;
+    max-width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+.welcome-image {
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+
+    border-radius: 20px;
+    /* Rounded corners */
+    overflow: hidden;
+}
+
+.welcome-image:hover {
+    transform: scale(1.01);
+}
+
+/* ===========================
+   RIGHT PANEL
+=========================== */
+.right-panel {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0;
+    box-sizing: border-box;
+}
+
+.login-form {
+    width: 320px;
+    /* was 360px */
+    margin: 0;
+}
+
+.welcome-title {
+    font-size: 34px !important;
+    font-weight: 800 !important;
+    line-height: 1.15;
+    margin-bottom: 10px !important;
+    color: #000000 !important;
+}
+
+.welcome-subtitle {
+    font-size: 13px !important;
+    /* was 15px */
+    margin-bottom: 28px !important;
+    /* was 42px */
+}
+
+.login-form .MuiTextField-root {
+    margin-bottom: 16px;
+}
+
+.login-form .MuiOutlinedInput-root {
+    height: 42px;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.login-form .MuiOutlinedInput-input {
+    font-size: 13px;
+}
+
+.login-form .MuiInputLabel-root {
+    display: none;
+}
+
+.options-row {
+    margin-top: 8px;
+    margin-bottom: 24px;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #666;
+}
+
+.remember input {
+    width: 15px;
+    height: 15px;
+    accent-color: #2563EB;
+}
+
+.forgot-link {
+    font-size: 13px !important;
+    color: #666 !important;
+}
+
+
+
+.signup-text {
+    margin-top: 60px !important;
+    /* was 90px */
+    font-size: 13px !important;
+}
+
+.signup-text a {
+    color: #2563EB;
+    font-weight: 600;
+}
+
+.signup-text a:hover {
+    color: #1D4ED8;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.signin-button {
+    width: 86px;
+    min-width: 86px !important;
+    height: 40px;
+    border-radius: 8px !important;
+    text-transform: none !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: #fff !important;
+    background: linear-gradient(90deg, #3B82F6 0%, #2563EB 100%) !important;
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.28) !important;
+    transition: all .25s ease;
+}
+
+
+.signin-button:hover {
+    background: linear-gradient(90deg, #2563EB 0%, #1D4ED8 100%) !important;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35) !important;
+    transform: translateY(-1px);
+}
+
+
+.MuiOutlinedInput-root:hover fieldset {
+    border-color: #2563eb !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused fieldset {
+    border-color: #2563eb !important;
+}
+
+.MuiInputLabel-root {
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    font-size: 14px !important;
+}
+
+.MuiInputLabel-root.Mui-focused,
+.MuiInputLabel-root.MuiFormLabel-filled {
+    left: 14px !important;
+    transform: none !important;
+    font-size: 12px !important;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1200px) {
+    .left-panel {
+        width: 42%;
+    }
+
+    .right-panel {
+        width: 58%;
+    }
+
+    .college-logo {
+        width: 40%;
+    }
+
+
+    .welcome-image {
+        width: 72%;
+    }
+
+    .login-card {
+        max-width: 340px;
+    }
+}
+
+@media (max-width: 900px) {
+    .left-panel {
+        padding: 16px 12px;
+    }
+
+    .login-container {
+        flex-direction: column;
+        height: auto;
+        padding: 12px 16px 20px;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+
+    .left-panel {
+        padding: 22px 18px;
+    }
+
+    .college-logo {
+        width: 40%;
+        max-width: 160px;
+    }
+
+    .welcome-image {
+        width: 74%;
+        max-width: 300px;
+    }
+
+    .right-panel {
+        padding: 0;
+    }
+
+    .login-card {
+        max-width: 320px;
+        padding: 16px;
+    }
+
+
+    .signin-title {
+        font-size: 20px !important;
+    }
+
+    .login-header {
+        padding: 0 16px;
+        height: 56px;
+    }
+}
